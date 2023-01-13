@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "Barlow", sans-serif;
+    background: url("/Images/Background.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .glass-bg {
+    background: rgba(34, 28, 66, 0.38);
+    box-shadow: 0px 4px 32px -2px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(12.5px);
+  }
+  .glass-bgnav {
+    background: rgba(17, 14, 39, 0.979);
+    box-shadow: 0px 4px 32px -2px rgba(0, 0, 0, 0.466);
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+  }
+  .nav-bg {
+    background: rgba(17, 13, 39, 0.38);
+    box-shadow: 0px 4px 32px -2px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(12.5px);
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 2rem;
+    top: 1.5rem;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    top: 1.5rem;
+  }
+  .fancy-text {
+    background: linear-gradient(to right, #d40066, #7601d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .banner img {
+    height: 100%;
+    width: 100%;
+  }
+  .line {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.377) 47%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  select option[value="1"] {
+    background: rgba(255, 255, 255, 0);
+  }
+  .card-bg {
+    background: linear-gradient(
+      137.45deg,
+      rgba(255, 255, 255, 0.0928) -111.09%,
+      rgba(255, 255, 255, 0.0116) 102.1%
+    );
+    box-shadow: 0px 4px 41px -1px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(9.5px);
+  }
+  .line {
+    background: linear-gradient(
+      137.45deg,
+      rgba(255, 255, 255, 0.0928) -111.09%,
+      rgba(255, 255, 255, 0.0116) 102.1%
+    );
+    backdrop-filter: blur(9.5px);
+  }
+  /* Steper */
+  .form1-container {
+    background: #f0ecec;
+    position: relative;
+    height: 98px;
+    margin-top: 5.5px;
+  }
+  .form1-container h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .form1-container .car-progress-bar {
+    width: 15%;
+    height: 4px;
+    background: dodgerblue;
+    margin: 0 auto;
+    transition: 1s;
+    position: absolute;
+    left: 26%;
+    top: 100%;
+  }
+  .form1-container .car-progress-bar .step1 {
+    position: absolute;
+    top: -8px;
+    left: 70%;
+  }
+  .form1-container .car-progress-bar .step1 img {
+    z-index: 99;
+    position: absolute;
+  }
+  .form1-container .car-default-bar {
+    width: 625px;
+    height: 4px;
+    background: rgba(159, 159, 159, 0.5);
+    position: absolute;
+    margin: 0 auto;
+    left: 26%;
+    top: 100%;
+    z-index: 9;
+  }
+  .form1-container .car-default-bar .step2,
+  .form1-container .car-default-bar .step3 {
+    color: #5e5959;
+    width: 27px;
+    height: 27px;
+    background: #d1cccc;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    padding: 0 7px;
+  }
+  .form1-container .car-default-bar .step1-heading,
+  .form1-container .car-default-bar .step2-heading,
+  .form1-container .car-default-bar .step3-heading {
+    position: absolute;
+    color: dodgerblue;
+    font-size: 12px;
+    font-weight: 500;
+    top: 30px;
+  }
+  .form1-container .car-default-bar .step1-heading {
+    left: 19%;
+  }
+  .form1-container .car-default-bar .step2-heading {
+    left: 45%;
+    color: gray;
+  }
+  .form1-container .car-default-bar .step3-heading {
+    left: 70%;
+    color: gray;
+  }
+  .form1-container .car-default-bar .step2 {
+    top: -7px;
+    left: 50%;
+  }
+  .form1-container .car-default-bar .step3 {
+    top: -7px;
+    left: 75%;
+  }
+
+  /*# sourceMappingURL=style.css.map */
+}
